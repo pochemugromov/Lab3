@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1B1818"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="500dp"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/delete"
+                        style="@style/AppTheme.RoundedCornerMaterialButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@android:color/darker_gray"
+                        android:fontFamily="serif"
+                        android:onClick="clear"
+                        android:text="AC"
+                        android:textColor="@color/white"
+                        android:textSize="35sp"
+                        android:textStyle="bold|italic" />
+
+                    <Button
+                        android:id="@+id/one"
+                        style="@style/AppTheme.RoundedCornerMaterialButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#393635"
+                        android:fontFamily="serif"
+                        android:onClick="onClickNum"
+                        android:text="1"
+                        android:textColor="@color/white"
+                        android:textSize="35sp"
+                        android:textStyle="bold|italic" />
+
+                    <Button
+                        android:id="@+id/four"
+                        style="@style/AppTheme.RoundedCornerMaterialButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#383635"
+                        android:fontFamily="serif"
+                        android:onClick="onClickNum"
+                        android:text="4"
+                        android:textColor="@color/white"
+                        android:textSize="35sp"
+                        android:textStyle="bold|italic" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"><![CDATA[
+
+                    android:textStyle="bold|italic" />
+
+                    ]]>
+
+                    <Button
+                        android:id="@+id/val"
+                        style="@style/AppTheme.RoundedCornerMaterialButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#FE5722"
+                        android:fontFamily="serif"
+                        android:onClick="value"
+                        android:text="+/-"
+                        android:textColor="@color/white"
+                        android:textSize="35sp" />
+
+                    <Button
+                        android:id="@+id/two"
+                        style="@style/AppTheme.RoundedCornerMaterialButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#383635"
+                        android:fontFamily="serif"
+                        android:onClick="onClickNum"
+                        android:text="2"
+                        android:textColor="@color/white"
+                        android:textSize="35sp"
+                        android:textStyle="bold|italic" />
+
+                    <Button
+                        android:id="@+id/five"
+                        style="@style/AppTheme.RoundedCornerMaterialButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#383635"
+                        android:fontFamily="serif"
+                        android:onClick="onClickNum"
+                        android:text="5"
+                        android:textColor="@color/white"
+                        android:textSize="35sp"
+                        android:textStyle="bold|italic" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/slash"
+                        style="@style/AppTheme.RoundedCornerMaterialButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#FF5722"
+                        android:fontFamily="serif"
+                        android:onClick="onClickAction"
+                        android:text="/"
+                        android:textColor="@color/white"
+                        android:textSize="35sp"
+                        android:textStyle="bold|italic" />
+
+                    <Button
+                        android:id="@+id/three"
+                        style="@style/AppTheme.RoundedCornerMaterialButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#383635"
+                        android:fontFamily="serif"
+                        android:onClick="onClickNum"
+                        android:text="3"
+                        android:textColor="@color/white"
+                        android:textSize="35sp"
+                        android:textStyle="bold|italic" />
+
+                    <Button
+                        android:id="@+id/six"
+                        style="@style/AppTheme.RoundedCornerMaterialButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#383635"
+                        android:fontFamily="serif"
+                        android:onClick="onClickNum"
+                        android:text="6"
+                        android:textColor="@color/white"
+                        android:textSize="35sp"
+                        android:textStyle="bold|italic" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/multiply"
+                        style="@style/AppTheme.RoundedCornerMaterialButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#FF5722"
+                        android:fontFamily="serif"
+                        android:onClick="onClickAction"
+                        android:text="*"
+                        android:textColor="@color/white"
+                        android:textSize="35sp"
+                        android:textStyle="bold|italic" />
+
+                    <Button
+                        android:id="@+id/plus"
+                        style="@style/AppTheme.RoundedCornerMaterialButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#FF5722"
+                        android:fontFamily="serif"
+                        android:onClick="onClickAction"
+                        android:text="+"
+                        android:textColor="@color/white"
+                        android:textSize="35sp"
+                        android:textStyle="bold|italic" />
+
+                    <Button
+                        android:id="@+id/minus"
+                        style="@style/AppTheme.RoundedCornerMaterialButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#FF5722"
+                        android:fontFamily="serif"
+                        android:onClick="onClickAction"
+                        android:text="-"
+                        android:textColor="@color/white"
+                        android:textSize="35sp"
+                        android:textStyle="bold|italic" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/seven"
+                            style="@style/AppTheme.RoundedCornerMaterialButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:backgroundTint="#383635"
+                            android:fontFamily="serif"
+                            android:onClick="onClickNum"
+                            android:text="7"
+                            android:textColor="@color/white"
+                            android:textSize="35sp"
+                            android:textStyle="bold|italic" />
+
+                        <Button
+                            android:id="@+id/eight"
+                            style="@style/AppTheme.RoundedCornerMaterialButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:backgroundTint="#383635"
+                            android:fontFamily="serif"
+                            android:onClick="onClickNum"
+                            android:text="8"
+                            android:textColor="@color/white"
+                            android:textSize="35sp"
+                            android:textStyle="bold|italic" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/zero"
+                        style="@style/AppTheme.RoundedCornerMaterialButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#383635"
+                        android:fontFamily="serif"
+                        android:onClick="onClickZero"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="35sp"
+                        android:textStyle="bold|italic" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/nine"
+                        style="@style/AppTheme.RoundedCornerMaterialButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#383635"
+                        android:fontFamily="serif"
+                        android:onClick="onClickNum"
+                        android:text="9"
+                        android:textColor="@color/white"
+                        android:textSize="35sp"
+                        android:textStyle="bold|italic" />
+
+                    <Button
+                        android:id="@+id/point"
+                        style="@style/AppTheme.RoundedCornerMaterialButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#383635"
+                        android:fontFamily="serif"
+                        android:onClick="onClickPoint"
+                        android:text="."
+                        android:textColor="@color/white"
+                        android:textSize="35sp"
+                        android:textStyle="bold|italic" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/equals"
+                    style="@style/AppTheme.RoundedCornerMaterialButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1.5"
+                    android:backgroundTint="#FF5722"
+                    android:fontFamily="serif"
+                    android:onClick="onClickEquals"
+                    android:text="="
+                    android:textColor="@color/white"
+                    android:textSize="35sp"
+                    android:textStyle="bold|italic" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/out"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:gravity="right"
+        android:paddingRight="10dp"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <TextView
+        android:id="@+id/formula"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:gravity="right"
+        android:paddingRight="10dp"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/out"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
