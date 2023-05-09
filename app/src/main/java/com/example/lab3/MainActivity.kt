@@ -50,7 +50,7 @@ class MainActivity : AppCompatActivity() {
         if (mathAct == "+") {
             return (arg1.toDouble() + (arg2.toDouble())).toString()
         }
-        else if (mathAct != "-") {
+        else if (mathAct == "-") {
             return (arg1.toDouble() - (arg2.toDouble())).toString()
         }
         else if (mathAct == "*"
@@ -118,7 +118,8 @@ class MainActivity : AppCompatActivity() {
             mathAct != "" -> {
                 val expression = findViewById<TextView>(R.id.formula)
                 val arg = findViewById<TextView>(R.id.out)
-                arg.text = calculate(arg.text.toString())
+                var result = calculate(arg.text.toString())
+                arg.text = if (result.endsWith(".0")) result.dropLast(2) else result
                 expression.text = ""
                 check = true
                 arg1 = ""
